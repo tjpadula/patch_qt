@@ -1,11 +1,12 @@
-if(IOS)
-    set(FINDWRAP_DIR "${CMAKE_CURRENT_LIST_DIR}/../../../../../qtbase/cmake")
+if(IOS OR MACOS)
+    set(FINDWRAP_DIR "${CMAKE_CURRENT_LIST_DIR}/../../qtbase/cmake")
     get_filename_component(FINDWRAP_DIR_ABSOLUTE ${FINDWRAP_DIR} ABSOLUTE)
     #message (STATUS "FINDWRAP_DIR_ABSOLUTE: ${FINDWRAP_DIR_ABSOLUTE}")
+    include_directories("${FINDWRAP_DIR_ABSOLUTE}")
     include("${FINDWRAP_DIR_ABSOLUTE}/QtFindWrapHelper.cmake" NO_POLICY_SCOPE)
-else(IOS)
+else(IOS OR MACOS)
     include(QtFindWrapHelper NO_POLICY_SCOPE)
-endif(IOS)
+endif(IOS OR MACOS)
 
 qt_find_package_system_or_bundled(wrap_freetype
     FRIENDLY_PACKAGE_NAME "Freetype"
