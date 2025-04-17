@@ -24,3 +24,5 @@ cp $LOCAL_DIR/qtbase/src/corelib/Qt6CoreMacros.cmake $TARGET_DIR/qtbase/src/core
 cp $LOCAL_DIR/qtbase/src/corelib/global/qglobal.cpp $TARGET_DIR/qtbase/src/corelib/global/qglobal.cpp
 cp $LOCAL_DIR/qtbase/src/gui/accessible/qaccessible.cpp $TARGET_DIR/qtbase/src/gui/accessible/qaccessible.cpp
 cp $LOCAL_DIR/qtmultimedia/src/multimedia/platform/darwin/camera/avfcamerautility.mm $TARGET_DIR/qtmultimedia/src/multimedia/platform/darwin/camera/avfcamerautility.mm
+
+cp $LOCAL_DIR/qtbase/src/3rdparty/libpng/pngpriv.h $TARGET_DIR/qtbase/src/3rdparty/libpng/pngpriv.h
