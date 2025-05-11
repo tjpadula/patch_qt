@@ -22,6 +22,7 @@ cp $LOCAL_DIR/qtbase/cmake/FindWrapPNG.cmake $TARGET_DIR/qtbase/cmake/FindWrapPN
 
 cp $LOCAL_DIR/qtbase/src/corelib/Qt6CoreMacros.cmake $TARGET_DIR/qtbase/src/corelib/Qt6CoreMacros.cmake
 cp $LOCAL_DIR/qtbase/src/corelib/global/qglobal.cpp $TARGET_DIR/qtbase/src/corelib/global/qglobal.cpp
+cp $LOCAL_DIR/qtbase/src/corelib/kernel/qcoreapplication.cpp $TARGET_DIR/qtbase/src/corelib/kernel/qcoreapplication.cpp
 cp $LOCAL_DIR/qtbase/src/gui/accessible/qaccessible.cpp $TARGET_DIR/qtbase/src/gui/accessible/qaccessible.cpp
 cp $LOCAL_DIR/qtmultimedia/src/multimedia/platform/darwin/camera/avfcamerautility.mm $TARGET_DIR/qtmultimedia/src/multimedia/platform/darwin/camera/avfcamerautility.mm
 
